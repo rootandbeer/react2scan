@@ -19,21 +19,6 @@ Different responses produce different classifications:
 
 This avoids interaction beyond error‑condition observation — no code execution, state modification, or exploitation is attempted.
 
-## Input Modes Supported
-
-The scanner supports multiple scanning workflows:
-
-1. Single Host Scanning
-./react2scan.sh 10.0.1.20 -p 3000
-
-2. CIDR /24 Subnet Expansion
-./react2scan.sh 172.18.1.0/24 -p 8443
-The script auto‑iterates from .1 through .254.
-
-4. File‑based Bulk Scanning
-(One IP per line)
-./react2shell_scan.sh -f targets.txt -p 3000
-
 ## Usage
 
 ```shell
@@ -47,4 +32,24 @@ Usage:
   ./react2shell_scan.sh 192.168.1.0/24
   ./react2shell_scan.sh ips.txt
   Optional: -p <port>
+```
+
+## Input Modes Supported
+
+The scanner supports multiple scanning workflows:
+
+1. Single Host Scanning
+```shell
+./react2scan.sh 10.0.1.20 -p 3000
+```
+
+2. CIDR /24 Subnet Expansion
+```shell
+./react2scan.sh 172.18.1.0/24 -p 8443
+```
+
+4. File‑based Bulk Scanning
+(One IP per line)
+```shell
+./react2scan.sh -f targets.txt -p 3000
 ```
