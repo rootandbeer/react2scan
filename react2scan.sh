@@ -109,7 +109,6 @@ if [[ -z "$TARGET_INPUT" ]]; then
     echo "Usage:"
     echo "  $0 host"
     echo "  $0 192.168.1.0/24"
-    echo "  $0 192.168.1.10-50"
     echo "  $0 ips.txt"
     echo "  Optional: -p <port>"
     exit 1
