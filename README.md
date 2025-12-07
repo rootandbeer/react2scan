@@ -24,24 +24,17 @@ This avoids interaction beyond error‑condition observation — no code executi
 The scanner supports multiple scanning workflows:
 
 1. Single Host Scanning
-./react2shell_scan.sh 10.0.1.20 -p 3000
+./react2scan.sh 10.0.1.20 -p 3000
 
 2. CIDR /24 Subnet Expansion
-./react2shell_scan.sh 172.18.1.0/24 -p 8443
-
-
+./react2scan.sh 172.18.1.0/24 -p 8443
 The script auto‑iterates from .1 through .254.
 
-3. IP Range Expansion
-./react2shell_scan.sh 192.168.1.10-50 -p 3000
-
 4. File‑based Bulk Scanning
-
 (One IP per line)
+./react2shell_scan.sh -f targets.txt -p 3000
 
 ## Usage
-
-./react2shell_scan.sh -f targets.txt -p 3000
 
 ```shell
 $ bash ./react2scan.sh
