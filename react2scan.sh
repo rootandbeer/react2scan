@@ -1,5 +1,9 @@
 #!/bin/bash
 #
+# This script is a lightweight proof‑of‑concept scanner designed to help
+# vulnerability management teams identify systems potentially affected by 
+# React2Shell‑related error handling issues (referenced as CVE‑2025‑55182 / CVE‑2025‑66478)
+# 
 # http://www.rootandbeer.com
 # http://www.github.com/rootandbeer
 #
